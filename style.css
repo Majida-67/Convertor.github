@@ -1,0 +1,118 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://store-images.s-microsoft.com/image/apps.43630.14323591455066440.4fa2d451-8a1f-44fd-a536-5fda778060ee.5ad45e3a-3125-4acf-8a9f-8c6dc46f060e?mode=scale&q=90&h=1080&w=1920'); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Converter App Styling */
+.converter-app {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00c6ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c6ff;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .converter-app {
+        padding: 30px;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input, select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .converter-app {
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    input, select {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    #result {
+        font-size: 0.9rem;
+    }
+}
